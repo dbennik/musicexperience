@@ -16,6 +16,13 @@ to create this token.
 
 Enter any prompt in the input field to search for the best suited music song.
 
+## Details
+
+When entering and submitting the prompt there will first be a connection
+with the Gemini API in order to execute a prompt to find a song based on the input.
+The response from Gemini will then be used to retrieve
+this song with the Spotify WEB API.
+
 ## ToDo
 
 - OAuth2 auth code flow implementation for Spotify API.
