@@ -8,7 +8,7 @@ the limit of 8 hours work.
 
 - Run `npm install` to install all packages.
 - Replace the `spotifyAccessToken` in spotify.service.ts with a valid Spotify Web API access token. 
-Run `curl -X POST "https://accounts.spotify.com/api/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id={client_id}&client_secret={client_secret}}"`
+Run `curl -X POST "https://accounts.spotify.com/api/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id={client_id}&client_secret={client_secret}"`
 to create this token.
 - Replace the `geminiAPIKey` in gemini.service.ts with a valid Gemini API Key.
 - Run `ng serve` to start the local host and visit the app on localhost:4200
