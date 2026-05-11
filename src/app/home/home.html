@@ -1,0 +1,30 @@
+<section>
+    <button matButton="filled">
+        <mat-icon>home</mat-icon>
+        Home
+    </button>
+</section>
+<section>
+    <mat-card appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>Muziek zoeken</mat-card-title>
+            <mat-card-subtitle>AI powered zoeken op spotify!</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form name="search" class="search-form">
+                <p>
+                    <mat-form-field>
+                        <mat-label>Prompt</mat-label>
+                        <input matInput type="text" [(ngModel)]="musicPrompt" name="search-term">
+                    </mat-form-field>
+                </p>
+                <p>
+                    <button matButton="filled" (click)="searchMusic()">Zoeken</button>
+                </p>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</section>
+<section class="result">
+    <app-search-music [song]="song" />
+</section>

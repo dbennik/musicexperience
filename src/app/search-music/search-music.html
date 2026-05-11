@@ -1,0 +1,19 @@
+<mat-card appearance="outlined">
+    <mat-card-header>
+        <mat-card-title-group>
+            <mat-card-title>{{song().artist}}</mat-card-title>
+            <mat-card-subtitle>{{song().title}}</mat-card-subtitle>
+        </mat-card-title-group>
+    </mat-card-header>
+    <img mat-card-image src="{{song().albumUrl}}" alt="{{song().title}}"/>
+    <mat-card-content>
+    </mat-card-content>
+    @if (song().href) {
+        <mat-card-actions>
+            <a matFab extended href="{{song().href}}" title="{{song().title}}" target="_blank">
+                <mat-icon>play_circle</mat-icon>
+                Play
+            </a>
+        </mat-card-actions>
+    }
+</mat-card>
