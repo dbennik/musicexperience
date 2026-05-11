@@ -12,7 +12,7 @@ export class GeminiService {
 
     // ToDo: Fetch accesstoken with OAuth2 authorization code flow and store in session storage
 
-    geminiAPIKey: String = 'AIzaSyDGyA6oaKnBwNho9upY6GFqErwDaIZ1Ho4';
+    geminiAPIKey: String = 'XXX';
 
     constructor(private httpClient: HttpClient) {
         this.body = <Object>{};

@@ -11,7 +11,7 @@ export class SpotifyService {
   // curl -X POST "https://accounts.spotify.com/api/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=a392836bf6ea4959bdb15ac96d1a7fed&client_secret=0329a529403441f7956e98d2edd34a78"
   // ToDo: Fetch accesstoken with OAuth2 authorization code flow and store in session storage
 
-  spotifyAccessToken: String = 'BQBS-CeO-27C5qeDpPtfI5Nxd6mo2iWj6i1hta8LZkgQ618Mk16VTjm-jmUOQsRR8zkiWAUBoCbsidpzmuw_-qHoctzvxb2ZmDkm5Au217f_9B2z-0ALUerMOpcOC7Pit95S4Kzg5GQ';
+  spotifyAccessToken: String = 'XXX';
 
   constructor(private httpClient: HttpClient) {
   }
